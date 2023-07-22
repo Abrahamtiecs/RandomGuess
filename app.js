@@ -43,8 +43,10 @@ function creerNouvelleDivAvecTitre(titre, pseudo) {
         maxGuesses = 7
     } else if(titre === 'Mortel'){
         maxGuesses = 5
-    } else if(titre === 'vétéran'){
-        maxGuesses = 3
+        alert(maxGuesses)
+    } else{
+        maxGuesses = 2
+        alert(maxGuesses)
     }
     // Création d'un nouvel élément input
     const choice = document.createElement('input');
@@ -110,6 +112,10 @@ function test(maxGuesses, nombreChoisie, pseudo, choice) {
             alert('why')
         }
     }
+    let currentScore = maxGuesses - guessCount
+    score = document.createElement('p')
+    score.textContent = `il vous reste ${currentScore} essai(s)`
+    finalbox.appendChild(score)
     guessCount++;
 }
 
@@ -147,8 +153,6 @@ function resetGame(resetButton, lastResult, choice, guesses, indices){
     choice.value = '';
     choice.focus();
     lastResult.style.backgroundColor = 'white';
-
-
 
 }
 

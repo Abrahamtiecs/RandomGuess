@@ -97,7 +97,7 @@ function test(maxGuesses, nombreChoisie, pseudo, choice) {
     } 
     
     else {
-        alert(randomNumber)
+        
         lastResult.textContent = 'Faux!';
         lastResult.style.color = 'red';
 

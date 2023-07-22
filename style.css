@@ -1,0 +1,46 @@
+
+body{
+    font-family: "Geologica";
+}
+
+input{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: solid;
+    padding-left: 10px;
+    font-family: "Geologica";
+    font-style: italic;
+    font-size: smaller;
+    border-radius: 10px;
+    border-color: blue;
+}
+
+Button {
+    border: solid;
+    font-size: larger;
+    cursor: pointer;
+    width: 400px;
+    font-family: "Geologica";
+    height: 50px;
+    border-radius: 10px;
+    color: aliceblue;
+    background-image: linear-gradient(to right, blue,  rgb(0, 174, 255));
+}
+
+.entry{
+    width: 90%;
+    margin-top: 10px;
+    padding-left: 10px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: large;
+    font-family: "Geologica";
+}
+
+#finalbox a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    color: black;
+}

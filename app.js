@@ -93,11 +93,11 @@ function test(maxGuesses, nombreChoisie, pseudo, choice) {
 
     else if (guessCount === maxGuesses) {
         lastResult.textContent = '!!! PERDU!!!';
-        
+        setGameOver(choice)
     } 
     
     else {
-        
+        alert(randomNumber)
         lastResult.textContent = 'Faux!';
         lastResult.style.color = 'red';
 
